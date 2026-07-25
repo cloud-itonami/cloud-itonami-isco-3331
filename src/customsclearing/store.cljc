@@ -36,7 +36,7 @@
   (register-consignment! [this consignment-id consignment-data]
     (MemStore. principals (assoc consignments consignment-id consignment-data) ledger))
   (add-record! [this record-type record-data]
-    (let [record (assoc record-data :type record-type :timestamp (System/currentTimeMillis))]
+    (let [record (assoc record-data :type record-type :timestamp #?(:clj (System/currentTimeMillis) :cljs (.getTime (js/Date.))))]
       (MemStore. principals consignments (conj ledger record))))
   (records [this]
     ledger))
