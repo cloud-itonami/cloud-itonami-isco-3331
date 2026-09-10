@@ -12,7 +12,7 @@
 # sibling-checkout steps are needed here. Reusable template + adaptation
 # notes: com-junkawasaki/root 90-docs/business/scripts/
 # flagship-generator-template/ (ISIC shape; this repo's ISCO shape
-# differs as noted in src/customsclearing/render_html.clj's own
+# differs as noted in src/customsclearing/render_html.kotoba's own
 # docstring).
 #
 # Fork note: this runs on the default GITHUB_TOKEN (contents: write).
