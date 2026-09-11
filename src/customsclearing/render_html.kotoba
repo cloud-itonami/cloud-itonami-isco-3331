@@ -64,7 +64,7 @@
     unreachable via the real advisor and are covered by the existing
     unit tests instead.
 
-  Usage: `clojure -M:render-html [out-file]`
+  Usage: `kbb -M:render-html [out-file]`
   (default `docs/samples/operator-console.html`)."
   (:require [jp-go-dds.skin]
             [kotoba.lang.text :as str]
@@ -239,7 +239,7 @@
      "<main>\n"
      "  <section class=\"card\">\n"
      "    <h2>Registered principals</h2>\n"
-     "    <p class=\"muted\">Demo snapshot — build-time-generated from <code>customsclearing.store</code> via <code>customsclearing.render-html</code> (<code>clojure -M:render-html</code>), regenerated nightly. <code>imp-001</code> is the verbatim <code>customsclearing.actor-test</code> fixture.</p>\n"
+     "    <p class=\"muted\">Demo snapshot — build-time-generated from <code>customsclearing.store</code> via <code>customsclearing.render-html</code> (<code>kbb -M:render-html</code>), regenerated nightly. <code>imp-001</code> is the verbatim <code>customsclearing.actor-test</code> fixture.</p>\n"
      "    <table>\n"
      "      <thead><tr><th>Principal</th><th>Name</th><th>Status</th><th>Last op status</th></tr></thead>\n"
      "      <tbody>\n"
